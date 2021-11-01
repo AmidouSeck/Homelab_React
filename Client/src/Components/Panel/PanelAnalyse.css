@@ -1,0 +1,32 @@
+.PanelAnalyse{
+    width: 80%;
+    background: rgba(129, 255, 203, 0.788);
+    height: fit-content;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    position: relative;
+    text-align: center;
+    border-radius: 17px;
+    padding-top: 40px;
+    transition: 0.3s;
+    padding-bottom: 40px;
+}
+.PanelAnalyse > .title
+
+{
+    color : rgba(0, 211, 123, 0.788);
+}
+.panel-expand
+{
+    height: 30px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-radius: 17px;
+    background: grey;
+    color : white;
+    cursor: pointer;
+}

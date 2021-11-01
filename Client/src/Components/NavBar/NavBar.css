@@ -1,0 +1,41 @@
+body{
+    font-family: SF Pro;
+}
+.logo-container
+{
+    display: flex;
+    align-items: center;
+    color: #215EE9;
+    font-size: 18;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.logo
+{
+    height: 30px;
+    width: 30px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+}
+nav >.icons
+{
+    display: grid;
+    align-items: center;
+    color: rgb(100, 100, 100);
+    text-align: right;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+.icons > div {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icons > div:hover 
+{
+    color : #215EE9;
+}

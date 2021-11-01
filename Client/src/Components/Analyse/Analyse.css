@@ -1,0 +1,173 @@
+.right-card-left
+    {
+        justify-items: center;
+        align-items: center;
+    }
+    .right-card-icon
+    {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    .right-card-right
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .right-card
+    {
+        transition: 0.3s;
+        box-shadow: 0px 0px 3px 3px rgb(197, 197, 197);
+        padding: 10px;
+        cursor: pointer;
+        background: white;
+        border-radius: 7px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 350px;
+        justify-self: center;
+    }
+    .right-card:hover{
+        transform: translateY(-10px);
+    }
+    .hospitals>.right
+    {
+        font-size: 22;
+        text-align: center;
+        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        row-gap: 20px;
+    }
+    li,ul
+    {
+        list-style: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    .rating>img
+    {
+        width: 15px;
+        height: 15px;
+    }
+    .sub-card-left-icon
+    {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    .sub-card-left
+    {
+        justify-self: center;
+    }
+    .sub-card-right
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .sub-card
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card
+    {
+        background: white;
+        display: grid;
+        grid-template-rows: 2fr 0.5fr;
+        box-shadow: 0px 0px 5px 5px rgb(226, 225, 225);
+        border-radius: 7px;
+        padding: 10px;
+        grid-row-gap: 10px;
+    }
+    .valider
+    {
+        width: 100%;
+        height: 50px;
+        border: none;
+        background: #215EE9;
+        color: white;
+        font-size: 18;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .valider:hover{
+        transform: translateY(-10px);
+    }
+    .search-input
+    {
+        height: 50px;
+        width: 100%;
+        padding-left: 30px;
+        font-size: 17;
+        border-radius: 7px;
+        border: none;
+        background: rgb(236, 236, 236);
+        color: rgb(218, 218, 218);
+    }
+    .toggle{
+        width: 45%;
+        background: white;
+        border-radius: 7px;
+        position: absolute;
+        left: 1%;
+        transform: translateY(-50%,-50%);
+        height: 90%;
+        z-index: 1;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .switch
+    {
+        display: grid;
+        position: relative;
+        padding-left: 10px;
+        align-items: center;
+        height: 50px;
+        background: rgb(212, 212, 212);
+        border-radius: 7px;
+        grid-template-columns: 1fr 1fr;
+        color: #656565 !important;
+    }
+    .searchbox
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 15px;
+        width: auto;
+        background: white;
+        border-radius: 7px;
+        padding: 10px;
+        text-align: center;
+
+    }
+    .left{
+        display: grid;
+        grid-row-gap: 20px;
+    }
+    .main
+    {
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
+    body{
+        background-color: #FAFAFA;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 20px;
+    }
+    .hospitals
+    {
+        display: grid;
+        margin-top: 50px;
+        padding-top: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+        grid-template-columns: 1fr 0.6fr 1fr;
+        background: rgb(245, 245, 245);
+    }

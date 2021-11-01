@@ -1,0 +1,72 @@
+.connect
+    {
+        height: 35px;
+        width: 250px;
+        background: #215EE9;
+        border: none;
+        border-radius: 7px;
+        color: white;
+        font-size: 18;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .connect:hover
+    {
+        transform: translateY(-10px);
+    }
+    .myInput>div>input{
+        width: 300px;
+        height: 40px;
+        background: #215de95b;
+        border: none;
+        border-radius: 7px;
+        padding-left: 30px;
+    }
+    .myInput{
+        color: #1a46ac;
+        font-size: 15;
+        align-items: end;
+        display: grid;
+        text-align: left;
+        grid-template-rows: 1fr 1fr;
+    }
+    .signup-signup-card-signup-card{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        background: none;
+        width: 350px;
+        align-items: center;
+        justify-items: center;
+        border-radius: 14px;
+        height: 90%;
+        justify-self: center;
+        align-self: center;
+        box-shadow: 0px 0px 5px 5px rgba(197, 197, 197, 0.185);
+    }
+    .signup-card
+    {
+        justify-items: center;
+        align-items: center;
+        height: 580px;
+        width: 95%;
+        background: white;
+        box-shadow: 0px 0px 5px 5px rgba(197, 197, 197, 0.185);
+        border-radius: 7px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+    body{
+        background-color: #FAFAFA;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 20px;
+    }
+    .container
+    {
+        display: grid;
+        margin: 50px;
+    }
+    a{
+        cursor: pointer;
+    }

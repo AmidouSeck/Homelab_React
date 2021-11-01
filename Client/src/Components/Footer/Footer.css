@@ -1,0 +1,11 @@
+footer{
+    text-align: center;
+    font-size: 50;
+    color: rgb(92, 92, 92);
+    background: whitesmoke;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
