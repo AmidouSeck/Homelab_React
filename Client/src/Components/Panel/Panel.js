@@ -1,9 +1,14 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Panel.css";
 import PanelAnalyse from "./PanelAnalyse";
 
 const Panel = (props) => {
-
+    document.body.style.overflow = "hidden";
+    useEffect(()=>{
+        return function(){
+            document.body.style.overflow = "auto";
+        }
+    })
     return(
         <div>
             <div className="panel-container">
