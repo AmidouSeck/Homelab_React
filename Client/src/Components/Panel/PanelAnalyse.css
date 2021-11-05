@@ -1,10 +1,7 @@
 .PanelAnalyse{
     width: 80%;
-<<<<<<< HEAD
     background: rgba(208, 245, 229, 0.788);
     height: fit-content;
-=======
->>>>>>> 872af840d48a16b7bd6c0a49db4eaf28135aef63
     display: grid;
     grid-template-rows: auto 1fr;
     position: relative;
