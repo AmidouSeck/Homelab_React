@@ -5,7 +5,9 @@ const SignUp = (props) => {
     return (
             <div className="container">
                 <div className="signup-card">
-                    <div className="left" />
+                <div className="left">
+                    <img src="../icons/login.png" style={{height : "95%",width : "85%",marginLeft : 90}}/>
+                </div>
                     <div className="right">
                         <div className="signup-signup-card">
                             <div style={{ color: '#215EE9', fontSize: 20 }}>Sidentifier</div>
@@ -22,7 +24,7 @@ const SignUp = (props) => {
                                 <div><input placeholder="confirmation mot de passe" type="text" name id /></div>
                             </div>
                             <div>
-                                <button className="connect">Connexion</button>
+                                <button className="connect">Sinscrire</button>
                             </div>
                             <div>
                                 Deja un compte ? <a href="/login" style={{ color: '#215EE9' }}>Sidentifier</a>

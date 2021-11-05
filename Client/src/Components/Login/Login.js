@@ -8,10 +8,16 @@ const Login = (props) => {
         <span>
             <div className="container">
             <div className="login-card">
-                <div className="left" />
+                <div className="left">
+                    <img src="../icons/login.png" style={{height : "95%",width : "85%",marginLeft : 90}}/>
+                </div>
                 <div className="right">
                     <div className="login-login-card">
-                        <div style={{ color: '#215EE9', fontSize: 20 }}>Sidentifier</div>
+                        <div style={{ color: '#215EE9', fontSize: 20 }}>Sidentifier
+                        <div>
+                            <img src="../icons/logo.png" style={{height : 50,width : 50,marginLeft : 20}}/>
+                        </div>
+                        </div>
                         <div className="myInput">
                             <div>Email</div>
                             <div><input placeholder="email" type="text" name id /></div>

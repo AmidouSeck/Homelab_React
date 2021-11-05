@@ -30,7 +30,7 @@
         text-align: left;
         grid-template-rows: 1fr 1fr;
     }
-    .signup-signup-card-signup-card{
+    .signup-signup-card{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         background: none;
