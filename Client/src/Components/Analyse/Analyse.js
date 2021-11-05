@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Analyse.css";
+import Card from "./Card";
+import DB from "../DB.json";
+import CardRight from "./CardRight";
 
 const Analyse = (props) => {
+    
+    const initialState = {
+        cards : []
+    }
+    const [state,setState] = useState(initialState);
+
+    useEffect(()=>{
+        const keys = Object.keys(DB);
+        const cards = [];
+        keys.forEach(key => {
+            const data = DB[key];
+            cards.push(<Card title={data.title} image={data.image}/>)
+        })
+        setState({
+            ...state,
+            cards : cards
+        })
+    },[]);
+
     return (
         <span>
             <div className="main">
@@ -11,6 +33,13 @@ const Analyse = (props) => {
                 <div style={{ color: 'grey',fontSize : 30 }}>
                     <p>choisissez le laboratoire dans lequel</p> 
                     <p>vous voulez effectuer votre analyse</p>
+                    <img alt="" src="../icons/arrow.png" style={{
+                        position : "absolute",
+                        left : 150,
+                        top : "90%",
+                        height : 150,
+                        width : 140
+                    }}/>
                     </div>
             </div>
             <section className="hospitals">
@@ -30,84 +59,7 @@ const Analyse = (props) => {
                             </button>
                         </div>
                     </div>
-                    <div className="card">
-                        <div className="sub-card">
-                            <div className="sub-card-left">
-                                <img className="sub-card-left-icon" src="./icons/82041945_o.jpg" />
-                            </div>
-                            <div className="sub-card-right">
-                                <div>
-                                    Institut Pasteur
-                                    <ul>
-                                        <li className="rating"><img src="./icons/star.png" /></li>
-                                        <li className="rating"><img src="./icons/star.png" /></li>
-                                        <li className="rating"><img src="./icons/star.png" /></li>
-                                        <li className="rating"><img src="./icons/star (1).png" /></li>
-                                        <li className="rating"><img src="./icons/star (1).png" /></li>
-                                    </ul>
-                                </div>
-                                <div>+221-234-65-34</div>
-                                <div>36 AV.Pasteur Dakar/Senegal</div>
-                            </div>
-                        </div>
-                        <div>
-                            <button className="valider" style={{ height: 30 }}>
-                                Choisir
-                            </button>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="sub-card">
-                            <div className="sub-card-left">
-                                <img className="sub-card-left-icon" src="./icons/82041945_o.jpg" />
-                            </div>
-                            <div className="sub-card-right">
-                                <div>
-                                    Institut Pasteur
-                                    <ul>
-                                        <li className="rating"><img src="./icons/star.png" /></li>
-                                        <li className="rating"><img src="./icons/star.png" /></li>
-                                        <li className="rating"><img src="./icons/star.png" /></li>
-                                        <li className="rating"><img src="./icons/star (1).png" /></li>
-                                        <li className="rating"><img src="./icons/star (1).png" /></li>
-                                    </ul>
-                                </div>
-                                <div>+221-234-65-34</div>
-                                <div>36 AV.Pasteur Dakar/Senegal</div>
-                            </div>
-                        </div>
-                        <div>
-                            <button className="valider" style={{ height: 30 }}>
-                                Choisir
-                            </button>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="sub-card">
-                            <div className="sub-card-left">
-                                <img className="sub-card-left-icon" src="./icons/82041945_o.jpg" />
-                            </div>
-                            <div className="sub-card-right">
-                                <div>
-                                    lorem ipsum
-                                    <ul>
-                                        <li className="rating"><img src="./icons/star.png" /></li>
-                                        <li className="rating"><img src="./icons/star.png" /></li>
-                                        <li className="rating"><img src="./icons/star.png" /></li>
-                                        <li className="rating"><img src="./icons/star (1).png" /></li>
-                                        <li className="rating"><img src="./icons/star (1).png" /></li>
-                                    </ul>
-                                </div>
-                                <div>+221-234-65-34</div>
-                                <div>36 AV.Pasteur Dakar/Senegal</div>
-                            </div>
-                        </div>
-                        <div>
-                            <button className="valider" style={{ height: 30 }}>
-                                Choisir
-                            </button>
-                        </div>
-                    </div>
+                    {state.cards}
                 </div>
                 <div>
                 </div>
@@ -122,90 +74,9 @@ const Analyse = (props) => {
                         </ul>
                     </div>
                     <div>it is a long established fact that you will be distracted by the readable</div>
-                    <div className="right-card">
-                        <div className="right-card-left">
-                            <img src="./icons/82041945_o.jpg" className="right-card-icon" />
-                        </div>
-                        <div className="right-card-right">
-                            <div>lorem impsum</div>
-                            <div><ul>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star (1).png" /></li>
-                                <li className="rating"><img src="./icons/star (1).png" /></li>
-                            </ul>
-                            </div>
-                            <div>
-                                <button className="valider">
-                                    Valider
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="right-card">
-                        <div className="right-card-left">
-                            <img src="./icons/82041945_o.jpg" className="right-card-icon" />
-                        </div>
-                        <div className="right-card-right">
-                            <div>lorem impsum</div>
-                            <div><ul>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star (1).png" /></li>
-                                <li className="rating"><img src="./icons/star (1).png" /></li>
-                            </ul>
-                            </div>
-                            <div>
-                                <button className="valider">
-                                    Valider
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="right-card">
-                        <div className="right-card-left">
-                            <img src="./icons/82041945_o.jpg" className="right-card-icon" />
-                        </div>
-                        <div className="right-card-right">
-                            <div>lorem impsum</div>
-                            <div><ul>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star (1).png" /></li>
-                                <li className="rating"><img src="./icons/star (1).png" /></li>
-                            </ul>
-                            </div>
-                            <div>
-                                <button className="valider">
-                                    Valider
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="right-card">
-                        <div className="right-card-left">
-                            <img src="./icons/82041945_o.jpg" className="right-card-icon" />
-                        </div>
-                        <div className="right-card-right">
-                            <div>lorem impsum</div>
-                            <div><ul>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star.png" /></li>
-                                <li className="rating"><img src="./icons/star (1).png" /></li>
-                                <li className="rating"><img src="./icons/star (1).png" /></li>
-                            </ul>
-                            </div>
-                            <div>
-                                <button className="valider">
-                                    Valider
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    <CardRight image={DB.institutPasteur.image}/>
+                    <CardRight image={DB.fann.image}/>
                 </div>
             </section>
         </span>

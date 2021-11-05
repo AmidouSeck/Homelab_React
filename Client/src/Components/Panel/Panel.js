@@ -1,14 +1,23 @@
-import React,{useEffect} from "react";
+import React,{useEffect,useState} from "react";
 import "./Panel.css";
 import PanelAnalyse from "./PanelAnalyse";
-
+import Results from "./Results";
 const Panel = (props) => {
+    const initialState = {
+        seeResults : false,
+        labo : null,
+        type : null,
+        date : null
+    }
+    const [state,setState] = useState(initialState);
+
     document.body.style.overflow = "hidden";
     useEffect(()=>{
         return function(){
             document.body.style.overflow = "auto";
         }
-    })
+    });
+
     return(
         <div>
             <div className="panel-container">
@@ -43,10 +52,16 @@ const Panel = (props) => {
                     </div>
                 </div>
                 <div className="panel-right">
-                    <PanelAnalyse/>
-                    <PanelAnalyse/>
-                    <PanelAnalyse/>
-                    <PanelAnalyse/>
+                    {state.seeResults ?
+                    <Results panelState={state}/>  
+                    :
+                    <div className="panel-right" style={{boxShadow : "none"}}>
+                    <PanelAnalyse panelState={state} setPanelState={setState}/>
+                    <PanelAnalyse panelState={state} setPanelState={setState} cardTitle={"Analyses Impayes"}/>
+                    <PanelAnalyse panelState={state} setPanelState={setState}/>
+                    <PanelAnalyse panelState={state} setPanelState={setState}/>
+                    </div>
+                    }
                 </div>
             </div>
         </div>

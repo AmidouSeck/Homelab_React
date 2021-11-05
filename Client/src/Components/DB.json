@@ -1,0 +1,18 @@
+{
+    "institutPasteur" : {
+        "image" : "https://research.pasteur.fr/wp-content/uploads/2015/05/82041945_o.jpg",
+        "title" : "Institut Pasteur"
+    },
+    "solabsen" : {
+        "image" : "http://digitalsenegal.com/_preview/solabsen17/IMG/arton162.jpg",
+        "title" : "solabsen"
+    },
+    "fann" : {
+        "image" : "https://media.istockphoto.com/photos/building-with-large-h-sign-for-hospital-picture-id1130389312?k=20&m=1130389312&s=170667a&w=0&h=6nR9_MoLaY5EfgoBdrmO990tgI9a-8u3Xv0ta3Edisk=",
+        "title" : "Fann"
+    },
+    "bio24" : {
+        "image" : "http://healthcare.wsp-pb.com/wp-content/uploads/2017/09/engineering-humber-river-hospital.jpg",
+        "title" : "Bio24"
+    }
+}

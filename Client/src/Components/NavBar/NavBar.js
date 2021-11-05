@@ -11,7 +11,11 @@ const NavBar = (props) => {
         path : null
     }
     const links = [<div style={{ color: '#215EE9' }}><a href="/login">Sidentifier</a></div>,
-    <div><a href="/signup">Sinscrire</a></div>];
+    <div><a href="/signup">
+        <button style={{width : 120,height : 40,borderRadius : 30,border: "none",background : "#215EE9",color : "white",cursor : "pointer"}}>
+        Sinscrire
+        </button>
+        </a></div>];
     const profile = [<div style={{display : "flex"}}>
         Noftifications
         <FontAwesomeIcon icon={faBell} style={{marginLeft : 5,color : "#215EE9"}}/>

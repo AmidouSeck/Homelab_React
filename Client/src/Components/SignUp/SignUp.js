@@ -28,7 +28,7 @@ const SignUp = (props) => {
                                 <div><input placeholder="confirmation mot de passe" type="text" name id /></div>
                             </div>
                             <div>
-                                <button className="connect">Connexion</button>
+                                <button className="connect">Sinscrire</button>
                             </div>
                             <div>
                                 Deja un compte ? <a href="/login" style={{ color: '#215EE9' }}>Sidentifier</a>
