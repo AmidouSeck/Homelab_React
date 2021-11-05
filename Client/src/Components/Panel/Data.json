@@ -1,4 +1,5 @@
 {
     "types" : ["Albuminie","Agglutinines","Amylase"],
-    "Laboratoire" : ["Institut Pasteur","Fann","Sirum Labo"]
+    "Laboratoire" : ["Institut Pasteur","Fann","Sirum Labo"],
+    "backgrounds" : ["rgb(144 255 209 / 41%)","rgb(233 255 144 / 41%)","rgb(144 255 245 / 41%)","rgb(255 0 0 / 41%)"]
 }
