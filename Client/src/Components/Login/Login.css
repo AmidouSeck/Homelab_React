@@ -1,9 +1,10 @@
 .connect
     {
         height: 35px;
-        width: 250px;
+        width: 100% ;
         background: #215EE9;
         border: none;
+        margin-top: 70px;
         border-radius: 7px;
         color: white;
         font-size: 18;
@@ -17,7 +18,7 @@
     .myInput>div>input{
         width: 300px;
         height: 40px;
-        background: #215de95b;
+        background: #769cf75b;
         border: none;
         border-radius: 7px;
         padding-left: 30px;
@@ -40,6 +41,7 @@
         justify-self: center;
         align-self: center;
         box-shadow: 0px 0px 5px 5px rgba(197, 197, 197, 0.185);
+        background-image: url(../../assets/images/Groupe\ 116.svg);
     }
     .login-card
     {
@@ -67,4 +69,14 @@
     }
     a{
         cursor: pointer;
+    }
+
+    .left{
+        justify-items: center;
+        align-items: center;
+    }
+
+    .imageBg{
+        height: 100%;
+        width: 100%;
     }

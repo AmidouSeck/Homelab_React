@@ -5,8 +5,13 @@ const Analyse = (props) => {
     return (
         <span>
             <div className="main">
-                <div />
-                <div>choisissez le laboratoire dans lequel vous voulez effectuer votre analyse</div>
+                <div>
+                    <img src={require('../../assets/images/Groupe 200.svg').default} alt="" style={{ height:'80%', width: '80%', justifySelf: "center", alignSelf: "center" }} />
+                    </div>
+                <div style={{ color: 'grey',fontSize : 30 }}>
+                    <p>choisissez le laboratoire dans lequel</p> 
+                    <p>vous voulez effectuer votre analyse</p>
+                    </div>
             </div>
             <section className="hospitals">
                 <div className="left">

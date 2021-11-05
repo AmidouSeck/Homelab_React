@@ -37,7 +37,7 @@ const PanelAnalyse = (props) => {
 
     return (
         <div className="PanelAnalyse">
-            <div>Resultats analyse</div>
+            <div>Analyses Terminées</div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
                 <div>
                     <div className="title">

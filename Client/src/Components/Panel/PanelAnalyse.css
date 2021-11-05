@@ -1,6 +1,6 @@
 .PanelAnalyse{
     width: 80%;
-    background: rgba(129, 255, 203, 0.788);
+    background: rgba(208, 245, 229, 0.788);
     height: fit-content;
     display: grid;
     grid-template-rows: auto 1fr;
