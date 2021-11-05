@@ -27,19 +27,20 @@ const Analyse = (props) => {
     return (
         <span>
             <div className="main">
-                <div style={{background : "white"}}>
-                <img src="../icons/3568984.jpg" style={{height : 500}}/>
-                </div>
-                <div>choisissez le laboratoire dans lequel vous voulez effectuer votre analyse</div>
                 <div>
-                    <img src="../icons/arrow.png" style={{
+                    <img src={require('../../assets/images/Groupe 200.svg').default} alt="" style={{ height:'80%', width: '80%', justifySelf: "center", alignSelf: "center" }} />
+                    </div>
+                <div style={{ color: 'grey',fontSize : 30 }}>
+                    <p>choisissez le laboratoire dans lequel</p> 
+                    <p>vous voulez effectuer votre analyse</p>
+                    <img alt="" src="../icons/arrow.png" style={{
                         position : "absolute",
                         left : 150,
                         top : "90%",
                         height : 150,
                         width : 140
                     }}/>
-                </div>
+                    </div>
             </div>
             <section className="hospitals">
                 <div className="left">

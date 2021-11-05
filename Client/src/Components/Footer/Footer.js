@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = (props) => {
     return(
         <footer>
-            HomeLab tout droit reserve 2021
+          <p>&copy;HomeLab tous droits réservés 2021</p> 
         </footer>
     )
 }

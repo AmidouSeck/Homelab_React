@@ -21,7 +21,7 @@ const NavBar = (props) => {
         <FontAwesomeIcon icon={faBell} style={{marginLeft : 5,color : "#215EE9"}}/>
     </div>,
     <div>
-        <img src="../icons/65646572251.jpg" style={{ height: 50, width: 50, borderRadius: "50%", justifySelf: "center", alignSelf: "center" }} />
+        <img src={require('../../assets/images/Nihamo-Sakho-blogueuse.jpeg').default} style={{ height: 50, width: 50, borderRadius: "50%", justifySelf: "center", alignSelf: "center" }} />
     </div>];
 
     const [state,setState] = useState(initialState);

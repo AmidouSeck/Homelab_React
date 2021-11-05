@@ -3,13 +3,18 @@ import "./Login.css";
 import NavBar from "../NavBar/NavBar";
 
 const Login = (props) => {
+    const image = '/Users/amidouseck/Desktop/Homelab_React/Client/src/assets/images/3071357.svg'
     return (
 
         <span>
             <div className="container">
             <div className="login-card">
-                <div className="left">
-                    <img src="../icons/login.png" style={{height : "95%",width : "85%",marginLeft : 90}}/>
+                <div style={{width: '100%', height:'100%'}} className="left">
+                    <div style={{width: '100%', height:'100%'}} className="content">
+                        <div className="imageBg">
+                            <img style={{width: '100%', height:'100%'}} src={require('../../assets/images/3071357.svg').default} alt=""/>
+                        </div>
+                    </div>
                 </div>
                 <div className="right">
                     <div className="login-login-card">
@@ -26,7 +31,7 @@ const Login = (props) => {
                             <div>Mot De Passe</div>
                             <div><input placeholder="mot de passe" type="text" name id /></div>
                         </div>
-                        <div>
+                        <div> 
                             <button className="connect"><a href="/panel">Connexion</a></button>
                         </div>
                         <div>

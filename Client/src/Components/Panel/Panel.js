@@ -25,7 +25,7 @@ const Panel = (props) => {
                     <div className="panel-left-card">
                         <div style={{alignItems:"center",display : "grid",gridTemplateRows : "1fr 1fr",justifyItems : "center"}}>
                             <div>
-                                <img style={{width : 90,height : 90,borderRadius : "50%"}} src="../icons/65646572251.jpg"/>
+                                <img style={{width : 90,height : 90,borderRadius : "50%"}} alt="" src={require('../../assets/images/Nihamo-Sakho-blogueuse.jpeg').default}/>
                             </div>
                             <div>Astou Sarr</div>
                             <div>38ans</div>
