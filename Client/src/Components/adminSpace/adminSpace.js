@@ -3,7 +3,7 @@ import React from "react";
 const adminSpace = (props) => {
     return(
         <div>
-            Hello
+            Hello world
         </div>
     )
 }
