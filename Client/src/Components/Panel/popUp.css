@@ -1,0 +1,16 @@
+.popUp
+{
+    position: fixed;
+    left: 50%;
+    height: 300px;
+    width: 700px;
+    background: red;
+    z-index: 1000;
+    transform : translate(-50%,-50%);
+    border-radius: 30px;
+    transition: 0.3s;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    
+}

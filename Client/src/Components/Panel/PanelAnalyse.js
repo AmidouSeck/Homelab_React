@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./PanelAnalyse.css";
 import myData from "./Data.json";
+import "./popUp.css";
 
 const PanelAnalyse = (props) => {
 
@@ -10,7 +11,8 @@ const PanelAnalyse = (props) => {
         dates : [],
         results : [],
         open : false,
-        background : myData.backgrounds[Math.floor(Math.random()*myData.backgrounds.length)]
+        background : myData.backgrounds[Math.floor(Math.random()*myData.backgrounds.length)],
+        pButtons : []
     }
     const [state,setState] = useState(initialState);
 
@@ -26,7 +28,8 @@ const PanelAnalyse = (props) => {
         let types = [];
         let labos = [];
         let dates = [];
-        let results = []
+        let results = [];
+        let pButtons = [];
         for(let i = 0; i < 10; i++)
         {    
             let type = myData.types[Math.floor(Math.random()*myData.types.length)];
@@ -44,13 +47,23 @@ const PanelAnalyse = (props) => {
                 type : type,
                 date : d.toLocaleDateString()
             })}}>Voir resultats</div>)
+
+            if(props.mode == 2)
+            {   
+                pButtons.push(
+                    <div onClick={()=>props.togglePopUp()}>
+                        Payer
+                    </div>
+                )
+            }
         }
         setState({
             ...state,
             types : types,
             labos : labos,
             dates : dates,
-            results : results
+            results : results,
+            pButtons : pButtons
         });
     },[]);
 
@@ -93,7 +106,11 @@ const PanelAnalyse = (props) => {
                         resultats
                     </div>
                     <span className="results">
-                    {state.results}
+                    {
+                        props.mode == 2 ? state.pButtons 
+                        : 
+                        state.results
+                    }
                     </span>
                 </div>
             </div>
