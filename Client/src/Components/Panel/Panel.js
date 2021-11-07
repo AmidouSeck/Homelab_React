@@ -3,6 +3,8 @@ import "./Panel.css";
 import PanelAnalyse from "./PanelAnalyse";
 import Results from "./Results";
 import popWindow from "./popUp";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCross, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const Panel = (props) => {
     const initialState = {
@@ -64,10 +66,27 @@ const Panel = (props) => {
                 <div className="panel-right">
                     <span>
                         {
-                            // <div className={"popUp"} style={{top : state.popUpShowing ? "50%" : "150%"}}>
-                            //     hello world
-                            // </div>
-                            <popWindow popUpShowing={state.popUpShowing}/>
+                            <div className={"popUp"} style={{top : state.popUpShowing ? "50%" : "150%"}}>
+                                <div className="popUp-Container">
+                                    <FontAwesomeIcon icon={faTimes} style={{marginLeft : 5,color : "#215EE9",left : "10px",top : "10px",fontSize : 30,position : "absolute"}} onClick={(e) => togglePopUp(e) }/>
+                                    <div style={{fontSize : 20}}>Analyses Impayes</div>
+                                    <div style={{fontSize : 14}}>Veuillez payer pour voir le resultat de vos analyses</div>
+                                    <div>
+                                        <button className="valider" style={{width : "350px",borderRadius : 17}}>Choisir un moyen de payement</button>
+                                    </div>
+                                    <div style={{display : "grid",gridTemplateColumns : "1fr 1fr 1fr",gridColumnGap : 15}}>
+                                        <div>
+                                            <img src="../icons/logo_doc.png" style={{width : 50,height : 50,borderRadius: "50%"}}/>
+                                        </div>
+                                        <div>
+                                            <img src="../icons/télécharger.png" style={{width : 50,height : 50,borderRadius: "50%"}}/>
+                                        </div>
+                                        <div>
+                                            <img src="../icons/etablissementon5410.jpg" style={{width : 50,height : 50,borderRadius: "50%"}}/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         }
                     </span>
                     {state.seeResults ?
