@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AmidouSeck/Homelab_React/issues"
   },
-  "homepage": "https://github.com/AmidouSeck/Homelab_React#readme"
+  "homepage": "https://github.com/AmidouSeck/Homelab_React#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
